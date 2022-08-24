@@ -1,0 +1,8 @@
+services:
+  handBook:
+    image: mongo:latest
+    container_name: handBook-database
+    ports:
+      - 27018:27017
+    volumes:
+      - ./mongo:/data/db
